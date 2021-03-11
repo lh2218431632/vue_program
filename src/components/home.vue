@@ -1,5 +1,5 @@
 <template>
-  <el-container class="father">
+  <el-container class="father"  style="height:750px">
     <el-header class="el-header">
       <img src="../assets/img/touxiang.jpg" alt="">
       <p>电商后台管理系统</p>
@@ -18,7 +18,7 @@
           background-color="#333744"
           text-color="#fff"
           active-text-color="#40b9ff">
-          <el-submenu :index="item.id+''" v-for="item in menu_list" :key="item.id">
+          <el-submenu :index="item.id+''" v-for="item in menu_list" :key="item.id"  >
             <template slot="title">
               <i :class="fonts[item.id]"></i>
               <span>{{item.authName}}</span>
@@ -81,9 +81,6 @@ export default {
       window.sessionStorage.setItem('path', s)
       this.indexPath = s
     }
-  },
-  show () {
-
   }
 }
 </script>
@@ -147,5 +144,8 @@ export default {
 }
 .el-menu  {
   border-right:none;
+}
+.el-menu  span{
+  font-size: 12px !important;
 }
 </style>

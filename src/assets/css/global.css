@@ -3,10 +3,14 @@ html,body,#app{
     padding:0px;
     height: 100%;
     width: 100%;
+    min-width: 1329px;
 
 }
 .el-breadcrumb{
     font-size:12px;
     margin-bottom:15px;
+}
+.el-submenu__title{
+    font-size:12px  !important;
 }
 

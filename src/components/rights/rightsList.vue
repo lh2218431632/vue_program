@@ -6,7 +6,7 @@
     <el-breadcrumb-item>权限列表</el-breadcrumb-item>
   </el-breadcrumb>
   <el-card >
-    <el-table :data="rightList" style="width: 100%" :border="true">
+    <el-table :data="rightList" style="width: 100%" :border="true"  stripe>
       <el-table-column
         type="index"
         label='#'
@@ -15,12 +15,12 @@
       <el-table-column
         prop="authName"
         label="权限名称"
-        width="397">
+        >
       </el-table-column>
       <el-table-column
         prop="path"
         label="路径"
-        width="397">
+        >
       </el-table-column>
       <el-table-column   label="权限等级" width="395"   >
           <template slot-scope="scope">

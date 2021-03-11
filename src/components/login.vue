@@ -2,7 +2,7 @@
   <div  class="blue">
     <div  class="father_box">
       <div  class="son">
-        <img src="../assets/img/img.png" alt="">
+        <img src="../assets/img/touxiang.jpg" alt="">
       </div>
       <el-form ref="login_form_Ref"  :model="loginObject"  :rules="login_rules"  class="login_form" >
         <el-form-item prop="username" >
